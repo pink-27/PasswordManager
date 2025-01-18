@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PasswordCard.css'; // Assuming you have a CSS file for styling
 
 const Card = ({ index, name, website, username, password, onDelete, onEdit }) => {
@@ -10,6 +10,8 @@ const Card = ({ index, name, website, username, password, onDelete, onEdit }) =>
   const [editedname, setEditedname] = useState(name);
   const [editedUsername, setEditedUsername] = useState(username);
   const [editedPassword, setEditedPassword] = useState(password);
+
+  
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -59,7 +61,7 @@ const Card = ({ index, name, website, username, password, onDelete, onEdit }) =>
         </>
       ) : (
         <>
-          <h3><strong>Name:</strong>  {name}</h3>
+          {/* <h3><strong>Name:</strong>  {name}</h3> */}
           <h3><strong>Website:</strong>  {website}</h3>
           <p><strong>Username:</strong> {username}</p>
           <p>

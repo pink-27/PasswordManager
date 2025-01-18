@@ -73,9 +73,9 @@ const CardNew = ({
         </>
       ) : (
         <>
-          <h3>
+          {/* <h3>
             <strong>Name:</strong> {name}
-          </h3>
+          </h3> */}
           <h3>
             <strong>Website:</strong> {website}
           </h3>
@@ -101,7 +101,7 @@ const CardNew = ({
               )}
             </span>
           </p>
-          <button className="toggle-button" onClick={handleButtonClick}>
+          {/* <button className="toggle-button" onClick={handleButtonClick}>
             {name}
             {isFormVisible && (
               <PopupForm
@@ -114,7 +114,7 @@ const CardNew = ({
                 closeForm={setFormVisible}
               />
             )}
-          </button>
+          </button> */}
           <button className="toggle-button" onClick={handleEdit}>
             Edit
           </button>
