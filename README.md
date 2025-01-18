@@ -18,13 +18,13 @@ This is a full-stack **Password Manager** application built using the MERN stack
 ```plaintext
 ├── backend
 │   ├── controllers
-│   │   └── credentialController.js   # Handles all business logic for credentials
+│   │   
 │   ├── middleware
-│   │   └── errorMiddleware.js        # Middleware for error handling
+│   │  
 │   ├── models
-│   │   └── credential.model.js       # Mongoose schema and model definition
+│   │   
 │   ├── routes
-│   │   └── credentialRoutes.js       # Route definitions for credentials API
+│   │   
 │   ├── server.js                     # Main entry point for backend server
 ├── frontend
 │   ├── public
